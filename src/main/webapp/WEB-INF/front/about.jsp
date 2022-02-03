@@ -6,7 +6,7 @@
 <jsp:include page="/WEB-INF/front/common/header.jsp"/>
 
 <div class="subpage">
-	 <img src="/img/sub/about_pc_220128.jpg" alt="셀리버리L&H" class="subImg pc-ver">
+	 <img src="/img/sub/about_pc_220128.jpg" alt="셀리버리L&H" class="subImg pc-ver">testtttt
 	  <img src="/img/sub/about_m_220128.jpg" alt="셀리버리L&H" class="subImg mo-ver">	
 </div>
 <!-- <div class="subpage">

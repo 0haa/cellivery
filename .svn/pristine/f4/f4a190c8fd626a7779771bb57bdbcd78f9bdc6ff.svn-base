@@ -1,0 +1,60 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<html xmlns:th="http://www.thymeleaf.org" th:fragment="inc_header" lang="ko" data-dark="true">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>셀리버리</title>
+    <link rel="stylesheet" href="/css/musign.css">
+    <script src="/js/jquery.js"></script>
+    <script src="/js/fullpage.js"></script>
+    <script src="/js/slick.min.js"></script>
+    <script src="/js/animation.js"></script>
+    <script src="/js/script.js"></script>
+</head>
+<body>
+   
+    <header class="header">
+        <div class="container01">
+            <div class="header-left">
+                <h1 class="logo">
+                	<a href="/" class="pc-ver">
+	                	<img src="/img/logo.png" alt="셀리버리L&H" >
+					</a>
+                	<a href="/" class="mo-ver">
+	                	<!-- <img src="img/m_logo.png" alt="셀리버리L&H" class="white"> -->
+	                	<img src="/img/m_logo2.png" alt="셀리버리L&H" class="color">
+					</a>
+               	</h1>
+                <div class="maingnb-wrap">
+                    <ul class="maingnb">
+                        <li><a href="/about" class="lato">ABOUT</a></li>
+                        <li><a href="/rnd" class="lato">R&AMP;D</a></li>
+                        <li><a href="/business" class="lato">BUSINESS</a></li>
+                        <li><a href="/brand" class="lato">BRAND</a></li>
+                        <li><a href="/pr" class="lato">PR</a></li>
+                        <li><a href="/career" class="lato">CAREER</a></li>
+                    </ul>
+                </div>    
+                <div class="se-lang">
+                    <img src="/img/search.png" alt="셀리버리L&H">
+                    <div class="lang">
+                        <img src="/img/lang.png" alt="셀리버리L&H">
+                        <ul>
+                            <li><a href="#" class="lato navy">KOR</a></li>
+                            <li><a href="#" class="lato navy">ENG</a></li>
+                        </ul>
+                        <img src="/img/down.png" alt="셀리버리L&H">
+                    </div>        
+                </div>
+            </div>            
+            <div class="hammenu pc-ver" >
+                <img src="/img/ham.png" alt="셀리버리L&H" >
+                <img src="/img/ham-w.png" alt="셀리버리L&H" >
+            </div>
+             <div class="hammenu mo-ver">             
+                <!-- <img src="img/mo_ham_w.png" alt="셀리버리L&H" class="white"> -->
+                <img src="/img/mo_ham_b.png" alt="셀리버리L&H" class="color">
+            </div>
+        </div>        
+    </header>

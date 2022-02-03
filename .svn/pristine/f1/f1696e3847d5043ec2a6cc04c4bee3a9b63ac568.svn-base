@@ -1,0 +1,30 @@
+$(function(){
+	$('.sub_search_box .select_box').click(function(){
+		$('.sub_search_box .select_box ul').slideToggle()
+	})
+	txtEffect();
+	$(window).scroll(function(e){
+	
+			txtEffect();
+			
+	})
+	function txtEffect(){
+		$(".txtEffect").each(function(){
+			var w_t = $(window).scrollTop();
+			var i_t = $(this).offset().top;
+			console.log(w_t,'w_t')
+			console.log(i_t,'i_t')
+			if(w_t + 900 > i_t){
+				$(this).addClass("on");
+			}else{
+				$(this).removeClass("on");
+			}
+		})
+	}
+
+	$(window).load(function(){
+
+		$('.sub_banner .sub_nav li.on').addClass('active')
+		
+	})
+})

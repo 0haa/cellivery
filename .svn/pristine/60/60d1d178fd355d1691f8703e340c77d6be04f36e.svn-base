@@ -1,0 +1,6 @@
+$(function(){
+	$('.sub_search_box .select_box').click(function(){
+		$('.sub_search_box .select_box ul').slideToggle()
+	})
+	
+})

@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+	font-family: 'Lato','Nanum Square', sans-serif;
+	font-size:14px;
+	color:#666;
+	letter-spacing:-0.5px;
+	line-height:1;
+    box-sizing: border-box;
+    outline: none;
+	margin: 0;
+	padding: 0;
+}
+img{
+	border:0;
+	max-width:100%;
+	vertical-align: middle;
+}
+a, a:hover, a:focus{
+	text-decoration:none;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+span, em, strong, b{
+	font-size:100%;
+	color:inherit;
+	font-family:inherit;
+}
+button{
+    outline: none;
+    border: 0;
+    background: none;
+}
+ul, ol, li {
+	list-style:none;
+}
+/*Removes default chrome and safari style*/
+select{ 
+	-webkit-appearance: none; 
+	-moz-appearance: none;
+	appearance: none;
+}
+select::-ms-expand {
+   display: none;          
+}
+.dis-no{
+	display:none !important;
+}
+.table{
+	display:Table;
+	width:100%;
+	table-layout:fixed;
+}
+.table > div{
+	display:Table-cell;
+}
+
+
+
+
+
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    src: url(/font/SpoqaHanSansNeo-Regular.eot);
+  	src: local('SpoqaHanSansNeo-Regular'),
+       local('SpoqaHanSansNeo-Regular'),
+       url(/font/SpoqaHanSansNeo-Regular.eot?#iefix) format('embedded-opentype'),
+       url(/font/SpoqaHanSansNeo-Regular.woff2) format('woff2'),
+       url(/font/SpoqaHanSansNeo-Regular.woff) format('woff'),
+       url(/font/SpoqaHanSansNeo-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Bold';
+     src: url(/font/SpoqaHanSansNeo-Bold.eot);
+  	src: local('SpoqaHanSansNeo-Bold'),
+       local('SpoqaHanSansNeo-Bold'),
+       url(/font/SpoqaHanSansNeo-Bold.eot?#iefix) format('embedded-opentype'),
+       url(/font/SpoqaHanSansNeo-Bold.woff2) format('woff2'),
+       url(/font/SpoqaHanSansNeo-Bold.woff) format('woff'),
+       url(/font/SpoqaHanSansNeo-Bold.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Light';
+    src: url(/font/SpoqaHanSansNeo-Light.eot);
+  	src: local('SpoqaHanSansNeo-Light'),
+       local('SpoqaHanSansNeo-Light'),
+       url(/font/SpoqaHanSansNeo-Light.eot?#iefix) format('embedded-opentype'),
+       url(/font/SpoqaHanSansNeo-Light.woff2) format('woff2'),
+       url(/font/SpoqaHanSansNeo-Light.woff) format('woff'),
+       url(/font/SpoqaHanSansNeo-Light.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Medium';
+     src: url(/font/SpoqaHanSansNeo-Medium.eot);
+  	src: local('SpoqaHanSansNeo-Medium'),
+       local('SpoqaHanSansNeo-Medium'),
+       url(/font/SpoqaHanSansNeo-Medium.eot?#iefix) format('embedded-opentype'),
+       url(/font/SpoqaHanSansNeo-Medium.woff2) format('woff2'),
+       url(/font/SpoqaHanSansNeo-Medium.woff) format('woff'),
+       url(/font/SpoqaHanSansNeo-Medium.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 레이아웃 */
+.lato{font-family: 'Lato', sans-serif; letter-spacing:0;}
+.spoqa-R{font-family: 'SpoqaHanSansNeo-Regular';}
+.spoqa-B{font-family: 'SpoqaHanSansNeo-Bold';}
+.spoqa-L{font-family: 'SpoqaHanSansNeo-Light';}
+.spoqa-M{font-family: 'SpoqaHanSansNeo-Medium';}
+
+
+.navy{color: #262f40;}
+.white{color: #fff;}
+
+.container01{width: 100%; height: 100%; display: flex; align-items: center; justify-content: space-between;}
+.container02{width: calc(99.999% - 10.417vw); height: 100%; position: absolute; top: 0; left: 0;} 
+/* header */
+.header{width: 100%; height: 112px; position: fixed; top: 0; left: 0; z-index: 1000;}
+.header-left{width: calc(99.999% - 10.417vw); display: flex; padding: 0 3.646vw;  align-items: center;}
+.header-right{width: 11.458vw; display: flex;}
+.header h1.logo{}
+.header h1.logo img{display: block; align-items: center;}
+.header h1.logo img.mo-ver{display:none;}
+.header .maingnb-wrap{width: calc(99.999% - 11.042vw); text-align: center;}
+.header .maingnb{ display: inline-block; overflow: hidden;}
+.header .maingnb li{ float: left; margin-right: 3.750vw;}
+.header .maingnb li:last-child{margin-right: 0;}
+.header .maingnb li a{font-size: 18px; color: #000; transition: none;}
+.header .maingnb li a:hover{color:#9fbee4 !important;}
+.se-lang{display: flex; align-items: center; display: none;}
+.se-lang > img{margin-right: 50px;;}
+.lang{display: flex; align-items: center;}
+.lang > img:first-child{margin-right: 8px;}
+.lang > img:last-child{margin-left: 16px;}
+.lang li:last-child{display: none;}
+.lang li a{font-size: 15px; font-weight: bold;}
+.hammenu{ width: 10.417vw; display: flex; justify-content: center;}
+.hammenu span{display: block;}
+.hammenu img{display:block; cursor:pointer;}
+.hammenu.pc-ver img:nth-child(2){display:none;}
+.hammenu.pc-ver.on img:nth-child(1){display:none;}
+.hammenu.pc-ver.on img:nth-child(2){display:block;}
+.hammenu img.mo-ver{display:none;}
+#fp-nav{}
+#fp-nav.fp-right{transition: background 1s; margin-top: 0; width: 10.417vw;height: 100%; top:0; right: 0;  display: flex !important;justify-content: center;align-items: center; border-left: 1px solid rgba(0,0,0,0.1);}
+#fp-nav.fp-right.last{z-index:-1;}
+#fp-nav ul{display: flex; flex-direction: column;}
+#fp-nav ul li{width: 6px; height: 6px; margin-bottom: 3.906vw;}
+#fp-nav ul li:last-child{display: none;}
+#fp-nav ul li:nth-child(5){margin-bottom: 0;}
+#fp-nav ul li a span{width: 6px; height: 6px; color: #262f40; opacity: 0.3; border-radius: 0;}
+#fp-nav ul li a.active span{opacity: 1; border-radius: 0;}
+#fp-nav .fp-sr-only{display: none;}
+#fp-nav ul li a.active span,
+#fp-nav ul li:hover a.active span, 
+.fp-slidesNav ul li a.active span, 
+.fp-slidesNav ul li:hover a.active span{width:6px; height:6px; margin: -3px 0 0 -3px;}
+
+
+.down-scroll{position: fixed; bottom: 10%; right: 4.5%; width: 30px; height: 30px; border-radius: 100%; border: 1px solid rgba(255,255,255,0.5);  z-index: 1000; cursor:pointer;}
+.down-scroll.mo-ver{display:none !important;}
+.down-scroll img{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); transition:all 0.5s;}
+.down-scroll::after{content: ''; display: block; width: 1px; height: 60px; position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); background: #262f40; transition:all 0.5s;}
+.down-scroll.last::after{bottom:-199%;}
+.down-scroll.last img{transform: translate(-50%,-50%) rotate(180deg);}
+.down-scroll.white::after{background: #fff;}
+
+.pc-ver{}
+.mo-ver{display:none;}
+
+
+/*2021.12.13 추가*/
+.header.fixed {background: #fff; transition: all ease .5s}
+.header {transition: all ease .5s}
+
